@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Finlandia</title>
+    <link rel="stylesheet" href="styles/styleG.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" style="color: #0669E1;">Topico 01</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #C41742;">Topico 02</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #56AA48;">Topico 03</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #FF6700;">Topico 04</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #FB0334;">Topico 05</a>
+
+            <section id="entrarLog">
+                <h1 id="buttonOpenPageLogin" style="cursor: pointer;">Login</h1>
+                <h1 id="buttonFechaPageLogin" style="cursor: pointer; display: none;">Deslogar</h1>
+            </section>
+        </nav>
+        <section id="secBottomHeader">
+            <!--Menu-->
+
+            <div class="menu-container" id="openMenu">
+                <div class="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <span class="menu-text">MENU</span>
+            </div>
+
+            <!--Logo-->
+            <img src="images/logo.png" id="logoJornal">
+
+            <!--Busca-->
+            <div id="busca">
+                <img src="images/lupa.png"> <input type="text" id="pesquisa" placeholder="BUSCAR">
+            </div>
+        </section>
+    </header>
+
+    <main id="principal">
+        <section class="noticias">
+            <section class="not" id="noticiaDoDia">
+                <img src="images/logos noticias/noticisa testes/CAPA NOTICIA.png">
+                <br>
+                <h1>Titulo Da noticia do dia</h1>
+                <article class="descrição">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est ipsa enim cum laborum hic mollitia. Illum qui nemo fugiat quod, quasi error magnam nobis, sunt provident harum repudiandae sapiente. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatum adipisci ullam impedit iure rerum quo? Incidunt ut asperiores excepturi, doloribus cum recusandae eligendi vero impedit ad voluptas officia tenetur.
+                </article>
+                <a href="pages/noticias/noticiaDodia.html">Ver Mais</a>
+            </section>
+
+            <section class="not">
+                <img src="images/NOTOCIA 02.png">
+                <br>
+                <h1>Titulo Da noticia 02</h1>
+                <article class="descrição">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est ipsa enim cum laborum hic mollitia. Illum qui nemo fugiat quod, quasi error magnam nobis, sunt provident harum repudiandae sapiente. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatum adipisci ullam impedit iure rerum quo? Incidunt ut asperiores excepturi, doloribus cum recusandae eligendi vero impedit ad voluptas officia tenetur.
+                </article>
+                <a href="#">Ver Mais</a>
+            </section>
+
+            <section class="not" id="ultimaNot">
+                <img src="images/NOTICIA 03.png">
+                <br>
+                <h1>Titulo Da noticia 03</h1>
+                <article class="descrição">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est ipsa enim cum laborum hic mollitia. Illum qui nemo fugiat quod, quasi error magnam nobis, sunt provident harum repudiandae sapiente. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis voluptatum adipisci ullam impedit iure rerum quo? Incidunt ut asperiores excepturi, doloribus cum recusandae eligendi vero impedit ad voluptas officia tenetur.
+                </article>
+                <a href="#">Ver Mais</a>
+            </section>
+        </section>
+
+        <section id="locEsola" style="background-color: #C4170C; color: white; border: none; border-radius: 25px;">
+            <section>
+                <h1>Localização Escola</h1>
+                <iframe id="locEscolaIfr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.4091829761023!2d-43.41273032551176!3d-22.97197614020254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdc1b83d3835b%3A0x73089d0be1418b44!2sEscola%20Municipal%20Finl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1722042637904!5m2!1spt-BR!2sbr" width="500" height="350" style="border:3px solid #C4170C;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+
+        <section id="menuOpen">
+            <nav id="menuNav">
+                <a href="#">
+                    <h1> - Pagina inicial</h1>
+                </a>
+
+                <a href="#">
+                    <h1> - Noticias do dia</h1>
+                </a>
+
+                <a href="#">
+                    <h1> - Menbros gremio</h1>
+                </a>
+            </nav>
+
+            <article id="redesSociais">
+                <a href="#">
+                    <img src="images/logoRedesSociais/instagram.png" class="iconsRedes">
+                </a>
+
+                <a href="#">
+                    <img src="images/logoRedesSociais/radio.png" class="iconsRedes" id="radioMaior">
+                </a>
+
+                <a href="#">
+                    <img src="images/logoRedesSociais/whatssap.png" class="iconsRedes" id="whatssapMAior">
+                </a>
+
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <section id="footerTop">
+            <img src="images/logo.png" id="logoJornalFooter"> <p style="cursor: pointer;">Últimas Notícias</p>
+        </section>
+
+        <section id="footerBottom">
+            <section id="footerBottomLeft">
+                <p>© Copyright 2023-2024 Escola Finlandia e José V.B.</p>
+            </section>
+
+            <section id="footerBottomRight">
+                <a href="#">política de privacidade</a>
+                <p>|</p>
+                <a href="#">minha conta</a>
+                <p>|</p>
+                <a href="#">anuncie conosco</a>
+            </section>
+        </section>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

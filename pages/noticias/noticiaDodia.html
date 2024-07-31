@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Finlandia</title>
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+    <style>
+        .images {
+            position: relative;
+            width: 700px; /* Largura do carrossel */
+            height: 400px; /* Altura do carrossel */
+            overflow: hidden;
+            margin: 15px auto;
+        }
+
+        .image-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .images img {
+            width: 700px; /* Largura da imagem */
+            height: 100%; /* Ajuste a altura da imagem para preencher o carrossel */
+            object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+            border-radius: 25px;
+            flex-shrink: 0; /* Evita que as imagens encolham */
+        }
+
+        .video-container {
+            position: relative;
+            width: 750px; /* Largura do carrossel de vídeos */
+            height: 400px; /* Altura do carrossel de vídeos */
+            overflow: hidden;
+            margin: 15px auto;
+        }
+
+        .video-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container video {
+            width: 750px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            flex-shrink: 0;
+            display: none; /* Esconde todos os vídeos inicialmente */
+        }
+
+        .video-container video.active {
+            display: block; /* Mostra o vídeo ativo */
+        }
+
+        #navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+            margin: 10px 0;
+        }
+
+        #navigation > button {
+            margin: 5px;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid white;
+            background-color: #A7140A;
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100vw;">
+        <nav>
+            <a href="#" style="color: #0669E1;">Tópico 01</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #C41742;">Tópico 02</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #56AA48;">Tópico 03</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #FF6700;">Tópico 04</a>
+            <span class="espaco"></span>
+            <a href="#" style="color: #FB0334;">Tópico 05</a>
+        </nav>
+        <section id="secBottomHeader">
+            <!--Menu-->
+            <div class="menu-container">
+                <div class="hamburger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <span class="menu-text">MENU</span>
+            </div>
+            <!--Logo-->
+            <a href="../../index.html" style="margin: auto;"><img src="../../images/logo.png" id="logoJornal"></a>
+            <!--Busca-->
+            <div id="busca">
+                <img src="../../images/lupa.png"> <input type="text" id="pesquisa" placeholder="BUSCAR">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <h1>Notícias do Dia</h1>
+        <section class="images">
+            <div class="image-wrapper">
+                <img src="../../images/logos noticias/noticisa testes/LOGO 01.png" class="active">
+                <img src="../../images/logos noticias/noticisa testes/LOGO 02.png">
+                <img src="../../images/logos noticias/noticisa testes/LOGO 03.png">
+                <img src="../../images/logos noticias/noticisa testes/LOGO 04.png">
+                <img src="../../images/logos noticias/noticisa testes/LOGO 05.png">
+            </div>
+            <button class="prev">Anterior</button>
+            <button class="next">Próximo</button>
+        </section>
+
+        <p class="descriçãoCompleta">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta eius dignissimos dicta sequi, consectetur distinctio asperiores rerum libero iste aspernatur minus earum iusto accusantium mollitia, dolorum non id velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur numquam, eum culpa sapiente alias ea consequuntur laboriosam corporis enim in dignissimos magni, nihil, quisquam accusamus amet! Cumque, iure aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure iusto alias enim sequi minus autem suscipit inventore vero consequuntur ab, animi error perspiciatis. Omnis adipisci dolor labore sequi ea aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tenetur exercitationem, reprehenderit enim quos deleniti veniam aut sunt, ab adipisci dolorum totam obcaecati impedit non praesentium! Quis iste impedit asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis totam aliquid dolore voluptatibus magni autem enim nisi tenetur! Perferendis necessitatibus blanditiis mollitia architecto atque? Repellendus sint odio nesciunt excepturi aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi labore consequuntur possimus ducimus facere nostrum. Ipsa, ad consectetur aliquid sequi voluptatem architecto officiis vel, in aut quae deleniti adipisci aliquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident iure ipsam fugit distinctio! Assumenda esse iste voluptate magni, quae impedit unde alias harum, culpa odio error iure nemo numquam eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit molestias, totam quidem quaerat aspernatur voluptas natus debitis ad corrupti deleniti iusto consequuntur asperiores enim non ipsa consequatur, nobis ducimus labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ducimus quo fugiat rerum doloribus minus repudiandae quis tempora eveniet, et id, fuga assumenda rem magnam! Error magni modi dolorum unde.
+        </p>
+
+        <div id="videos">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video src="../../videos/Destaques da semana- Biden desiste de candidatura, eleições na Venezuela e abertura das Olimpíadas.mp4" class="active" controls></video>
+                    <video src="../../videos/Joe Biden anuncia desistência da disputa presidencial dos Estados Unidos - AGORA CNN.mp4" controls></video>
+                </div>
+            </div>
+            <div id="navigation">
+                <button id="prev">Anterior</button>
+                <button id="next">Próximo</button>
+            </div>
+        </div>
+
+        <p class="descriçãoCompleta">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, perferendis ducimus. Sit molestias maxime dolorem asperiores iusto odit veritatis accusantium! Repudiandae, similique quae nulla distinctio itaque veniam vero excepturi fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio minima voluptatem, vitae fugit officiis delectus a voluptate libero eaque ipsa placeat, reiciendis maxime enim quas pariatur mollitia? Quaerat, repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi consequatur dolor in velit sed iste adipisci commodi corrupti quas rerum voluptatem a, explicabo architecto illo ullam officiis? Nihil, aut autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nemo praesentium sit natus obcaecati consequatur, nesciunt cum placeat ex, qui odio nobis harum? Doloremque officia sed similique doloribus, veritatis vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dicta magnam dolore eaque, hic nulla delectus, accusamus eos magni maiores iusto? Dolorum doloribus inventore aut minima dolores placeat blanditiis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis quo doloribus aliquid repellat accusamus assumenda cum doloremque voluptates saepe recusandae. Delectus minima architecto perferendis doloremque natus eveniet in quis ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas voluptas in sint velit quam exercitationem qui nihil eum ad provident laborum officiis aperiam, praesentium ullam quibusdam deleniti tempore ut soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique recusandae dicta doloremque perferendis sapiente assumenda sequi ad fugiat, labore corporis obcaecati tempora vel! Delectus esse quidem iusto accusamus dolorem minima.
+        </p>
+    </main>
+    
+    <footer style="height: 160px;">
+        <section id="footerTop">
+            <img src="../../images/logo.png" id="logoJornalFooter"> <p style="cursor: pointer;">Últimas Notícias</p>
+        </section>
+
+        <section id="footerBottom">
+            <section id="footerBottomLeft">
+                <p>© Copyright 2023-2024 Escola Finlandia e José V.B.</p>
+            </section>
+
+            <section id="footerBottomRight">
+                <a href="#">Política de Privacidade</a>
+                <p>|</p>
+                <a href="#">Minha Conta</a>
+                <p>|</p>
+                <a href="#">Anuncie Conosco</a>
+            </section>
+        </section>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pesquisa = document.getElementById('pesquisa');
+            pesquisa.setAttribute('autocomplete', 'off');
+
+            const secBottomHeader = document.getElementById('secBottomHeader');
+            const headerOffsetTop = secBottomHeader.offsetTop;
+
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset >= headerOffsetTop) {
+                    secBottomHeader.classList.add('fixed');
+                    document.getElementById('busca').style.top = '10px';
+                    document.querySelector('.menu-container').style.top = '15px';
+                } else {
+                    secBottomHeader.classList.remove('fixed');
+                    document.getElementById('busca').style.top = '50px';
+                    document.querySelector('.menu-container').style.top = '55px';
+                }
+            });
+
+            // Imagens do carrossel
+            const imagesWrapper = document.querySelector('.image-wrapper');
+            const images = document.querySelectorAll('.images img');
+            const prevImageButton = document.querySelector('.prev');
+            const nextImageButton = document.querySelector('.next');
+
+            let imageIndex = 0;
+
+            function updateImages() {
+                const offset = -imageIndex * 100; // Ajuste o percentual para o número de imagens
+                imagesWrapper.style.transform = `translateX(${offset}%)`;
+            }
+
+            function showPrevImage() {
+                imageIndex = (imageIndex > 0) ? imageIndex - 1 : images.length - 1;
+                updateImages();
+            }
+
+            function showNextImage() {
+                imageIndex = (imageIndex < images.length - 1) ? imageIndex + 1 : 0;
+                updateImages();
+            }
+
+            prevImageButton.addEventListener('click', showPrevImage);
+            nextImageButton.addEventListener('click', showNextImage);
+
+            // Add swipe support for images
+            let startX;
+            imagesWrapper.addEventListener('mousedown', (e) => {
+                startX = e.pageX;
+                imagesWrapper.style.cursor = 'grabbing';
+            });
+
+            imagesWrapper.addEventListener('mouseup', (e) => {
+                const endX = e.pageX;
+                const distance = startX - endX;
+
+                if (Math.abs(distance) > 50) {
+                    if (distance > 0) {
+                        showNextImage();
+                    } else {
+                        showPrevImage();
+                    }
+                }
+                imagesWrapper.style.cursor = 'grab';
+            });
+
+            imagesWrapper.style.cursor = 'grab';
+
+            // Vídeos do carrossel
+            const videoWrapper = document.querySelector('.video-wrapper');
+            const videos = document.querySelectorAll('.video-container video');
+            const prevVideoButton = document.getElementById('prev');
+            const nextVideoButton = document.getElementById('next');
+
+            let videoIndex = 0;
+
+            function updateVideos() {
+                videos.forEach((video, index) => {
+                    video.classList.toggle('active', index === videoIndex);
+                });
+            }
+
+            function showPrevVideo() {
+                videoIndex = (videoIndex > 0) ? videoIndex - 1 : videos.length - 1;
+                updateVideos();
+            }
+
+            function showNextVideo() {
+                videoIndex = (videoIndex < videos.length - 1) ? videoIndex + 1 : 0;
+                updateVideos();
+            }
+
+            prevVideoButton.addEventListener('click', showPrevVideo);
+            nextVideoButton.addEventListener('click', showNextVideo);
+
+            // Add swipe support for videos
+            let startXVideo;
+            videoWrapper.addEventListener('mousedown', (e) => {
+                startXVideo = e.pageX;
+                videoWrapper.style.cursor = 'grabbing';
+            });
+
+            videoWrapper.addEventListener('mouseup', (e) => {
+                const endXVideo = e.pageX;
+                const distanceVideo = startXVideo - endXVideo;
+
+                if (Math.abs(distanceVideo) > 50) {
+                    if (distanceVideo > 0) {
+                        showNextVideo();
+                    } else {
+                        showPrevVideo();
+                    }
+                }
+                videoWrapper.style.cursor = 'grab';
+            });
+
+            videoWrapper.style.cursor = 'grab';
+
+            // Inicializa com o primeiro vídeo ativo
+            updateVideos();
+        });
+    </script>
+</body>
+</html>
