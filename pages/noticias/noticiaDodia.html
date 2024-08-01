@@ -3,88 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal Finlandia</title>
-    <link rel="stylesheet" href="../../styles/header.css">
+    <title>Jornal Finlândia</title>
+    <link rel="stylesheet" href="../../styles/styleG.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../../styles/footer.css">
     <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
-    <style>
-        .images {
-            position: relative;
-            width: 700px; /* Largura do carrossel */
-            height: 400px; /* Altura do carrossel */
-            overflow: hidden;
-            margin: 15px auto;
-        }
-
-        .image-wrapper {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 100%;
-            height: 100%;
-        }
-
-        .images img {
-            width: 700px; /* Largura da imagem */
-            height: 100%; /* Ajuste a altura da imagem para preencher o carrossel */
-            object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
-            border-radius: 25px;
-            flex-shrink: 0; /* Evita que as imagens encolham */
-        }
-
-        .video-container {
-            position: relative;
-            width: 750px; /* Largura do carrossel de vídeos */
-            height: 400px; /* Altura do carrossel de vídeos */
-            overflow: hidden;
-            margin: 15px auto;
-        }
-
-        .video-wrapper {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 100%;
-            height: 100%;
-        }
-
-        .video-container video {
-            width: 750px;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 25px;
-            flex-shrink: 0;
-            display: none; /* Esconde todos os vídeos inicialmente */
-        }
-
-        .video-container video.active {
-            display: block; /* Mostra o vídeo ativo */
-        }
-
-        #navigation {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 30px;
-            margin: 10px 0;
-        }
-
-        #navigation > button {
-            margin: 5px;
-            width: 100px;
-            height: 30px;
-            border-radius: 10px;
-            outline: none;
-            border: 1px solid white;
-            background-color: #A7140A;
-            color: white;
-            font-weight: bolder;
-        }
-    </style>
 </head>
 <body>
-    <header style="width: 100vw;">
+    <header style="width: 100dvw;">
         <nav>
             <a href="#" style="color: #0669E1;">Tópico 01</a>
             <span class="espaco"></span>
@@ -151,14 +76,14 @@
         </p>
     </main>
     
-    <footer style="height: 160px;">
+    <footer>
         <section id="footerTop">
             <img src="../../images/logo.png" id="logoJornalFooter"> <p style="cursor: pointer;">Últimas Notícias</p>
         </section>
 
         <section id="footerBottom">
             <section id="footerBottomLeft">
-                <p>© Copyright 2023-2024 Escola Finlandia e José V.B.</p>
+                <p>© Copyright 2023-2024 Escola Finlândia e José V.B.</p>
             </section>
 
             <section id="footerBottomRight">
@@ -293,6 +218,8 @@
             // Inicializa com o primeiro vídeo ativo
             updateVideos();
         });
+        
     </script>
+    <script src="../../scripts/index.js"></script>
 </body>
 </html>

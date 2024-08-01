@@ -57,3 +57,10 @@ function toggleMenu() {
         menu.style.display = 'none';
     }
 }
+
+document.querySelectorAll('.noticia-img').forEach((img, index) => {
+    img.addEventListener('click', () => {
+        const link = img.closest('.not').querySelector('.ver-mais').getAttribute('href');
+        window.location.href = link;
+    });
+});
