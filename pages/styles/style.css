@@ -20,13 +20,24 @@ main {
     padding: 0 10px;
 }
 
+#secBottomHeader {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+}
+
+#aLogo {
+    position: absolute;
+    top: 35px;
+}
+
 .images {
     position: relative;
     width: 100%;
     max-width: 700px;
     height: auto;
     overflow: hidden;
-    margin: 80px auto;
+    margin: 20px auto;
 }
 
 .image-wrapper {
@@ -100,8 +111,8 @@ header nav a {
 }
 
 .descriçãoCompleta {
-    width: 60%;
-    max-width: 100%;
+    width: 55%;
+    width: 55%;
     font-weight: bolder;
     letter-spacing: 1px;
     padding: 10px;
@@ -165,9 +176,8 @@ button.next {
 }
 
 @media (max-width: 480px) {
-
     header {
-        width: 100%; /* Ajuste o header para 100% em vez de 190vh */
+        width: 100%;
     }
 
     main > h1 {
@@ -181,11 +191,17 @@ button.next {
 
     .descriçãoCompleta {
         font-size: 0.9em;
+        width: 100%;
     }
 
     .menu-container {
         position: absolute;
         left: 10px;
         top: 10px;
+    }
+
+    #aLogo {
+        position: absolute;
+        top: 3px; /* A posição da logo será de 3px do topo */
     }
 }
